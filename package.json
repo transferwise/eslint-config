@@ -1,0 +1,33 @@
+{
+  "name": "@transferwise/eslint-config",
+  "version": "0.1.0",
+  "description": "TransferWise ESLint configuration",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/transferwise/eslint-config.git"
+  },
+  "keywords": [
+    "transferwise",
+    "eslint",
+    "config",
+    "eslintconfig"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/transferwise/eslint-config/issues"
+  },
+  "homepage": "https://github.com/transferwise/eslint-config#readme",
+  "peerDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-import": "^2.17.1",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-react": "^7.12.4",
+    "prettier": "^1.17.0"
+  }
+}
