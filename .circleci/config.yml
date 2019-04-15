@@ -1,0 +1,58 @@
+defaults: &defaults
+  working_directory: ~/eslint-config
+  docker:
+    - image: circleci/node:latest
+version: 2
+jobs:
+  dependencies:
+    <<: *defaults
+    steps:
+      - checkout
+      - run:
+          name: Install dependencies
+          command: npm ci
+      - persist_to_workspace:
+          root: .
+          paths:
+            - '*'
+  test:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: ~/eslint-config
+      - run:
+          name: Test
+          command: npm test
+  release:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: ~/eslint-config
+      - run:
+          name: Setup npm token
+          command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN_PUBLISH" >> ~/.npmrc
+      - run:
+          name: Release to GitHub
+          command: |
+            mkdir ~/.ssh
+            ssh-keyscan github.com >> ~/.ssh/known_hosts
+            npm run release-to-github
+      - run:
+          name: Publish on npm
+          command: npm publish --access=public
+
+workflows:
+  version: 2
+  dependencies-test-release:
+    jobs:
+      - dependencies
+      - test:
+          requires:
+            - dependencies
+      - release:
+          context: frontend-publish
+          requires:
+            - test
+          filters:
+            branches:
+              only: master

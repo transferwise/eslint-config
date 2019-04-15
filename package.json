@@ -3,7 +3,11 @@
   "version": "0.1.0",
   "description": "TransferWise ESLint configuration",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "npm run check-release-to-github",
+    "check-release-to-github": "release-to-github-with-changelog-pre-release-checks",
+    "release-to-github": "release-to-github-with-changelog"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/transferwise/eslint-config.git"
@@ -29,5 +33,8 @@
     "eslint-plugin-prettier": "^3.0.1",
     "eslint-plugin-react": "^7.12.4",
     "prettier": "^1.17.0"
+  },
+  "devDependencies": {
+    "release-to-github-with-changelog": "^1.2.2"
   }
 }
