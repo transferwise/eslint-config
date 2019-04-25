@@ -1,3 +1,9 @@
+# v0.2.0
+## Add `husky` and `lint-staged` to peer dependencies, update readme
+
+* `husky` and `lint-staged` are added to `peerDependencies` for easier usage
+* badges, easy installation with `install-peerdeps`, usage details, and contribution have been added to readme
+
 # v0.1.0
 ## Initial release
 

@@ -1,31 +1,63 @@
-# :shirt: TransferWise ESLint config
+# :shirt: TransferWise ESLint config with Prettier
 
-# Usage
+[![npm](https://img.shields.io/npm/v/@transferwise/eslint-config.svg)](https://www.npmjs.com/package/@transferwise/eslint-config)
+[![GitHub release](https://img.shields.io/github/release/transferwise/eslint-config.svg)](https://github.com/transferwise/eslint-config/releases)
+[![CircleCI](https://img.shields.io/circleci/project/github/transferwise/eslint-config/master.svg)](https://circleci.com/gh/transferwise/eslint-config)
+[![npm](https://img.shields.io/npm/l/@transferwise/eslint-config.svg)](https://github.com/transferwise/eslint-config/blob/master/LICENSE)
 
-## 1. Install peer dependencies
+This is an extensible ESLint config used at [TransferWise](https://transferwise.com) :money_with_wings:
+
+It uses [Airbnb's](https://www.npmjs.com/package/eslint-config-airbnb) as a base, has [Prettier](https://www.npmjs.com/package/prettier) baked in, and overrides some rules we've seen ourselves having to change often :heart:
+
+## Usage
+
+### 1. Install with peer dependencies
 
 ```bash
-npm install --save-dev eslint eslint-plugin-prettier babel-eslint eslint-config-prettier eslint-config-airbnb eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-import prettier
+npx install-peerdeps --dev @transferwise/eslint-config
 ```
+(if it doesn't work, [update npm](https://docs.npmjs.com/try-the-latest-stable-version-of-npm))
 
-## 2. Install config
-
-```bash
-npm install --save-dev @transferwise/eslint-config
-```
-
-## 3. Use config
+### 2. Extend your config with `@transferwise`
 
 `.eslintrc`
-
 ```json
 {
   "extends": "@transferwise"
 }
 ```
+Your own config can extend and override it however you want. If you find yourself changing a certain rule often, consider [contributing](#contributing).
 
-## 4. Lint
+### 3. Lint and format
 
-Errors and warnings will be shown when running the `eslint` command. 
-ESLint fixes and Prettier formatting will be done when running `eslint --fix`. 
-When set up, editors and IDEs should pick up the messages and automatically format as well.
+It's recommended to:
+* lint as part of the `npm test` script (f.e. `eslint src/`)
+* auto-format on save in your editor/IDE (nothing specific to this config, just install ESLint for your tool)
+* add auto-formatting before committing:
+
+`package.json`
+```json
+{
+  ...,
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  }
+}
+```
+[`lint-staged`](https://www.npmjs.com/package/lint-staged) and [`husky`](https://www.npmjs.com/package/husky) are already installed for you as part of this package's peer dependencies :ok_hand:
+
+## Contribution
+
+If you think a rule should be added or changed, create a pull request.
+The change will be discussed, and if people agree, it can be merged.
+Every merge automatically releases to [GitHub](https://github.com/transferwise/eslint-config/releases) and [npm](https://www.npmjs.com/package/@transferwise/eslint-config).
+
+Bear in mind that you'll need to bump the version in `package.json` (major for breaking rules, minor for additions, patch for bugfixes) and add a `CHANGELOG.md` entry.
