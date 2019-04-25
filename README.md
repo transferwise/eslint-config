@@ -54,7 +54,7 @@ It's recommended to:
 ```
 [`lint-staged`](https://www.npmjs.com/package/lint-staged) and [`husky`](https://www.npmjs.com/package/husky) are already installed for you as part of this package's peer dependencies :ok_hand:
 
-## Contribution
+## Contributing
 
 If you think a rule should be added or changed, create a pull request.
 The change will be discussed, and if people agree, it can be merged.

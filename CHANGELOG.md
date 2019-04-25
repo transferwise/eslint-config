@@ -1,3 +1,8 @@
+# v0.2.1
+## Fix Contributing heading in readme to follow link
+
+* the link and heading are both Contributing now
+
 # v0.2.0
 ## Add `husky` and `lint-staged` to peer dependencies, update readme
 

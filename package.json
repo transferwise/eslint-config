@@ -1,6 +1,6 @@
 {
   "name": "@transferwise/eslint-config",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "TransferWise ESLint configuration",
   "main": "index.js",
   "scripts": {
