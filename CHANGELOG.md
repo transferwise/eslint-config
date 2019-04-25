@@ -1,3 +1,8 @@
+# v0.2.3
+## Use `prettier/react` config to support `eslint-plugin-react`
+
+* extending `prettier/react` overrides some rules to support `eslint-plugin-react`, used in `eslint-config-airbnb`
+
 # v0.2.2
 ## Use plugin:prettier/recommended config to extend config and apply plugin
 
