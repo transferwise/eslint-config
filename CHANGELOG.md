@@ -1,3 +1,8 @@
+# v0.2.2
+## Use plugin:prettier/recommended config to extend config and apply plugin
+
+* extending plugin:prettier/recommended config extends the prettier config and applies the plugin in a single step
+
 # v0.2.1
 ## Fix Contributing heading in readme to follow link
 
