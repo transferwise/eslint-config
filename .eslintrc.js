@@ -1,7 +1,8 @@
-const prettierConfig = require('./.prettierrc.json');
+const prettierConfig = require('./.prettierrc');
 
 module.exports = {
   parser: 'babel-eslint',
+
   env: {
     browser: true,
     jest: true,

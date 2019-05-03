@@ -4,11 +4,11 @@
   "description": "TransferWise ESLint & Prettier configuration",
   "main": ".eslintrc.js",
   "files": [
-    ".prettierrc.json"
+    ".prettierrc.js"
   ],
   "scripts": {
-    "format": "prettier-eslint --write .eslintrc.js .prettierrc.json",
-    "lint": "eslint --fix .eslintrc.js",
+    "format": "eslint --fix *.js",
+    "lint": "eslint *.js",
     "test": "npm run lint && npm run check-release-to-github",
     "check-release-to-github": "release-to-github-with-changelog-pre-release-checks",
     "release-to-github": "release-to-github-with-changelog"
@@ -39,25 +39,25 @@
     "eslint-plugin-react": "^7.12.4",
     "husky": "^2.1.0",
     "lint-staged": "^8.1.5",
-    "prettier-eslint-cli": "^4.7.1"
+    "prettier": "^1.17.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
-    "eslint": "^5.16.0",
+    "eslint": "^5.3.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-prettier": "^4.1.0",
-    "eslint-plugin-import": "^2.17.1",
+    "eslint-plugin-import": "^2.17.2",
     "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-prettier": "^3.0.1",
-    "eslint-plugin-react": "^7.12.4",
+    "eslint-plugin-react": "^7.13.0",
     "husky": "^2.1.0",
     "lint-staged": "^8.1.5",
-    "prettier-eslint-cli": "^4.7.1",
+    "prettier": "^1.17.0",
     "release-to-github-with-changelog": "^1.2.2"
   },
   "lint-staged": {
-    "*.{js,json}": [
-      "prettier-eslint --write",
+    "*.js": [
+      "eslint --fix",
       "git add"
     ]
   },

@@ -28,23 +28,7 @@ npx install-peerdeps --dev @transferwise/eslint-config
 ```
 Your own config can extend and override it however you want. If you find yourself changing a certain rule often, consider [contributing](#contributing).
 
-### 3. Set up Prettier to use our base configuration
-
-As of version `1.17` Prettier supports shared config files. :tada:
-
-To use the configuration provided by this package, add the following line to your `package.json`:
-
-`package.json`
-```json
-{
-  ...,
-  "prettier": "@transferwise/eslint-config/.prettierrc.json"
-}
-```
-
-Read more about [shared configs](https://prettier.io/blog/2019/04/12/1.17.0.html#config) especially, if you need to extend/override the default configuration. 
-
-### 4. Lint and format
+### 3. Lint and format
 
 It's recommended to:
 * lint as part of the `npm test` script (f.e. `eslint src/`)
@@ -69,6 +53,23 @@ It's recommended to:
 }
 ```
 [`lint-staged`](https://www.npmjs.com/package/lint-staged) and [`husky`](https://www.npmjs.com/package/husky) are already installed for you as part of this package's peer dependencies :ok_hand:
+
+### 4. [Optional] Set up Prettier to use our base configuration
+
+As of version `1.17` Prettier supports shared config files. :tada:
+
+To use the configuration provided by this package, add the following line to your `package.json`:
+
+`package.json`
+```json
+{
+  ...,
+  "prettier": "@transferwise/eslint-config/.prettierrc.js"
+}
+```
+
+Read more about [shared configs](https://prettier.io/blog/2019/04/12/1.17.0.html#config) especially, if you need to extend/override the default configuration. 
+
 
 ## Contributing
 
