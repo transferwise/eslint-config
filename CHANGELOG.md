@@ -1,3 +1,9 @@
+# v0.3.0
+## Add default `prettier` config
+
+* consumers can now use the shared `prettier` config
+* run `eslint` and `prettier-eslint` on the config files themselves, to stay consistent with the rules and formatting
+
 # v0.2.3
 ## Use `prettier/react` config to support `eslint-plugin-react`
 
