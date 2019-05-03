@@ -70,6 +70,7 @@ To use the configuration provided by this package, add the following line to you
 
 Read more about [shared configs](https://prettier.io/blog/2019/04/12/1.17.0.html#config) especially, if you need to extend/override the default configuration. 
 
+This is only required if you're running `Prettier` as a file watcher in your IDE to automatically format files. `JS` files will be formatted by `eslint` even if you don't configure your IDE.
 
 ## Contributing
 
