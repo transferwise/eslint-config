@@ -1,3 +1,6 @@
+# v0.4.0
+## Add exception to disable the `destructuring-assignment` rule for class fields
+
 # v0.3.0
 ## Add default `prettier` config
 
