@@ -54,11 +54,11 @@ It's recommended to:
 ```
 [`lint-staged`](https://www.npmjs.com/package/lint-staged) and [`husky`](https://www.npmjs.com/package/husky) are already installed for you as part of this package's peer dependencies :ok_hand:
 
-### 4. [Optional] Set up Prettier to use our base configuration
+### 4. (Optional) Set up Prettier separately to use our configuration
 
-As of version `1.17` Prettier supports shared config files. :tada:
+**The ESLint config already auto-formats JS files based on Prettier rules, so you only need this when your editor does not support ESLint auto-fixing or you want to use Prettier with file types other than JS.**
 
-To use the configuration provided by this package, add the following line to your `package.json`:
+To use the configuration, add the following line to your `package.json`:
 
 `package.json`
 ```json
@@ -68,9 +68,7 @@ To use the configuration provided by this package, add the following line to you
 }
 ```
 
-Read more about [shared configs](https://prettier.io/blog/2019/04/12/1.17.0.html#config) especially, if you need to extend/override the default configuration. 
-
-This is only required if you're running `Prettier` as a file watcher in your IDE to automatically format files. `JS` files will be formatted by `eslint` even if you don't configure your IDE.
+Read more about shared configs [here](https://prettier.io/blog/2019/04/12/1.17.0.html#config), especially if you need to extend/override the default configuration. 
 
 ## Contributing
 
