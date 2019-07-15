@@ -1,3 +1,6 @@
+# v0.4.1
+## Add `curly` rule for consistency
+
 # v0.4.0
 ## Add exception to disable the `destructuring-assignment` rule for class fields
 
