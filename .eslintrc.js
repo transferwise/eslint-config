@@ -22,5 +22,6 @@ module.exports = {
       },
     ],
     'import/prefer-default-export': 0,
+    curly: [1, 'all'],
   },
 };
