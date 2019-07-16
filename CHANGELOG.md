@@ -1,4 +1,4 @@
-# v0.4.1
+# v1.0.0
 ## Add `curly` rule for consistency
 
 # v0.4.0
