@@ -13,7 +13,7 @@ module.exports = {
     'react/destructuring-assignment': [2, 'always', { ignoreClassFields: true }],
     'react/jsx-filename-extension': 0,
     'no-use-before-define': 0,
-    'jsx-a11y/label-has-for': [
+    'jsx-a11y/label-has-associated-control': [
       2,
       {
         required: {

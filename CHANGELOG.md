@@ -1,3 +1,6 @@
+# v2.0.0
+## Use `jsx-a11y/label-has-associated-control` in favour of deprecated `jsx-a11y/label-has-for`
+
 # v1.0.0
 ## Add `curly` rule for consistency
 
