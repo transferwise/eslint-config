@@ -1,3 +1,6 @@
+# v2.1.0
+## Ignore`jsx-a11y/label-has-for` since [AirBnb rules are still accounting for both and](https://github.com/airbnb/javascript/issues/1873). Also remove `prefer-promise-reject-errors` for tests.  
+
 # v2.0.0
 ## Use `jsx-a11y/label-has-associated-control` in favour of deprecated `jsx-a11y/label-has-for`
 
