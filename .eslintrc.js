@@ -13,6 +13,7 @@ module.exports = {
     'react/destructuring-assignment': [2, 'always', { ignoreClassFields: true }],
     'react/jsx-filename-extension': 0,
     'no-use-before-define': 0,
+    'jsx-a11y/label-has-for': 0,
     'jsx-a11y/label-has-associated-control': [
       2,
       {
@@ -20,6 +21,7 @@ module.exports = {
       },
     ],
     'import/prefer-default-export': 0,
+    'prefer-promise-reject-errors': 0,
     curly: [1, 'all'],
   },
 };
