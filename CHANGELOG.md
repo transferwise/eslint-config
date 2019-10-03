@@ -1,3 +1,10 @@
+# v3.0.1
+## Remove husky and lint-staged from peerDependencies
+
+The ESLint config does not really _depend_ on these tools required for linting on commit (which is optional),
+therefore they're removed from `peerDependencies`.
+README is updated to include the installation command for these.
+
 # v3.0.0
 ## Move eslint-config-airbnb and eslint-config-prettier to dependencies from peerDependencies
 
