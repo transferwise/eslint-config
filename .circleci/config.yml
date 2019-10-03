@@ -40,6 +40,23 @@ jobs:
       - run:
           name: Publish on npm
           command: npm publish --access=public
+  beta-release:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: ~/eslint-config
+      - run:
+          name: Setup npm token
+          command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN_PUBLISH" >> ~/.npmrc
+      - run:
+          name: Release to GitHub
+          command: |
+            mkdir ~/.ssh
+            ssh-keyscan github.com >> ~/.ssh/known_hosts
+            npm run release-to-github -- --branch=beta
+      - run:
+          name: Publish on npm
+          command: npm publish --tag next --access=public
 
 workflows:
   version: 2
@@ -56,3 +73,10 @@ workflows:
           filters:
             branches:
               only: master
+      - beta-release:
+          context: frontend-publish
+          requires:
+            - test
+          filters:
+            branches:
+              only: beta
