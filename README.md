@@ -35,12 +35,14 @@ It's recommended to:
 * auto-format on save in your editor/IDE (nothing specific to this config, just install ESLint for your tool)
 * add auto-formatting before committing:
 
+`npm install --save-dev lint-staged husky`
+
 `package.json`
 ```json
 {
   ...,
   "lint-staged": {
-    "*.js": [
+    "*.js": [ // don't forget to add .jsx, .ts, and .tsx if you use these extensions
       "eslint --fix",
       "git add"
     ]
@@ -52,7 +54,6 @@ It's recommended to:
   }
 }
 ```
-[`lint-staged`](https://www.npmjs.com/package/lint-staged) and [`husky`](https://www.npmjs.com/package/husky) are already installed for you as part of this package's peer dependencies :ok_hand:
 
 ### 4. (Optional) Set up Prettier separately to use our configuration
 
