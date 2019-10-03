@@ -1,3 +1,9 @@
+# v3.0.0
+## Move eslint-config-airbnb and eslint-config-prettier to dependencies from peerDependencies
+
+Addressing https://github.com/transferwise/eslint-config/issues/3.
+Breaking: consumers should remove these 2 direct dependencies from their `package.json`
+
 # v2.1.0
 ## Ignore`jsx-a11y/label-has-for` since [AirBnb rules are still accounting for both and](https://github.com/airbnb/javascript/issues/1873). Also remove `prefer-promise-reject-errors` for tests.  
 
