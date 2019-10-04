@@ -1,3 +1,6 @@
+# v3.0.2
+## Move babel-eslint to dependencies from peerDependencies
+
 # v3.0.1
 ## Remove husky and lint-staged from peerDependencies
 
