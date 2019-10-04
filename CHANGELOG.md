@@ -1,3 +1,9 @@
+# v4.0.0
+## Update dependencies
+
+Breaking: As `eslint-config-airbnb` and `eslint-config-prettier` were updated with a major change,
+it means consumers of this package may also break due to rules changed/added.
+
 # v3.0.2
 ## Move babel-eslint to dependencies from peerDependencies
 
