@@ -30,19 +30,45 @@ Your own config can extend and override it however you want. If you find yoursel
 
 ### 3. Lint and format
 
-It's recommended to:
-* lint as part of the `npm test` script (f.e. `eslint src/`)
-* auto-format on save in your editor/IDE (nothing specific to this config, just install ESLint for your tool)
-* add auto-formatting before committing:
+For the best developer experience, all of the following are recommended.
 
+#### Linting and formatting in `package.json` scripts
+
+Example:
+```json
+  "test": "npm run lint && ...other test commands...",
+  "lint": "eslint '**/*.{js,jsx}'", // runs on all js and jsx files, add {ts,tsx} for TypeScript
+  "format": "npm run lint -- --fix"
+```
+
+#### Auto-formatting in IDE
+
+**VS Code**
+
+1. Install [ESLint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+1. To prevent clashes, turn off the formatter and enable ESLint auto-fix on save:
+
+`settings.json`
+```json
+  "javascript.format.enable": false,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    // "typescript",
+    // "typescriptreact",
+  ],
+  "eslint.autoFixOnSave": true,
+```
+
+#### Auto-formatting on commit
+
+1. Install required packages:  
 `npm install --save-dev lint-staged husky`
-
+1. Add the following config:
 `package.json`
 ```json
-{
-  ...,
   "lint-staged": {
-    "*.js": [ // don't forget to add .jsx, .ts, and .tsx if you use these extensions
+    "*.{js,jsx}": [ // add {ts,tsx} for TypeScript
       "eslint --fix",
       "git add"
     ]
@@ -52,7 +78,6 @@ It's recommended to:
       "pre-commit": "lint-staged"
     }
   }
-}
 ```
 
 ### 4. (Optional) Set up Prettier separately to use our configuration
@@ -63,10 +88,7 @@ To use the configuration, add the following line to your `package.json`:
 
 `package.json`
 ```json
-{
-  ...,
   "prettier": "@transferwise/eslint-config/.prettierrc.js"
-}
 ```
 
 Read more about shared configs [here](https://prettier.io/blog/2019/04/12/1.17.0.html#config), especially if you need to extend/override the default configuration. 
