@@ -1,3 +1,6 @@
+# v4.0.1
+## Improve readme with script and VS Code settings examples
+
 # v4.0.0
 ## Update dependencies
 
