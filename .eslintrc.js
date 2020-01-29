@@ -7,6 +7,7 @@ module.exports = {
     browser: true,
     jest: true,
   },
+  plugins: ['fp'],
   extends: ['airbnb', 'plugin:prettier/recommended', 'prettier/react'],
   rules: {
     'prettier/prettier': ['error', prettierConfig],
@@ -22,6 +23,14 @@ module.exports = {
     ],
     'import/prefer-default-export': 0,
     'prefer-promise-reject-errors': 0,
+    'fp/no-mutation': [
+      'error',
+      {
+        commonjs: true,
+        allowThis: true,
+      },
+    ],
+    'fp/no-mutating-assign': 'error',
     curly: [1, 'all'],
   },
 };
