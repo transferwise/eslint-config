@@ -1,4 +1,4 @@
-# v4.1.0
+# v5.0.0
 ## Add rules to mitigate pitfalls of object mutation
 
 # v4.0.1
