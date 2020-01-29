@@ -35,7 +35,7 @@
   },
   "peerDependencies": {
     "eslint": "^6.5.1",
-    "eslint-plugin-es": "^3.0.0",
+    "eslint-plugin-fp": "^2.3.0",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-prettier": "^3.1.1",
@@ -45,7 +45,6 @@
   },
   "devDependencies": {
     "eslint": "^6.5.1",
-    "eslint-plugin-es": "^3.0.0",
     "eslint-plugin-fp": "^2.3.0",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
