@@ -28,12 +28,7 @@ module.exports = {
       {
         commonjs: true,
         allowThis: true,
-        exceptions: [
-          { property: 'propTypes' },
-          { property: 'defaultProps' },
-          { object: 'global' },
-          { object: 'window' },
-        ],
+        exceptions: [{ property: 'propTypes' }, { property: 'defaultProps' }, { object: 'window' }],
       },
     ],
     'fp/no-mutating-assign': 'error',
