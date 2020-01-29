@@ -1,6 +1,6 @@
 {
   "name": "@transferwise/eslint-config",
-  "version": "5.0.1",
+  "version": "5.0.2",
   "description": "TransferWise ESLint & Prettier configuration",
   "main": ".eslintrc.js",
   "files": [
