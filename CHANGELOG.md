@@ -1,3 +1,6 @@
+# v5.0.1
+## Don't apply mutation rules for propTypes and defaultProps
+
 # v5.0.0
 ## Add rules to mitigate pitfalls of object mutation
 
