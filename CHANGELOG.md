@@ -1,3 +1,6 @@
+# v5.0.2
+## Don't apply mutation rules for window
+
 # v5.0.1
 ## Don't apply mutation rules for propTypes and defaultProps
 
