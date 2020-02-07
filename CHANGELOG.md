@@ -1,4 +1,7 @@
 # v5.0.2
+## Don't apply mutation rules for getInitialProps
+
+# v5.0.2
 ## Don't apply mutation rules for window
 
 # v5.0.1
