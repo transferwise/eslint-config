@@ -1,3 +1,9 @@
+# v6.0.0
+
+## Update dependencies
+
+Breaking: `prettier` and `eslint-plugin-react-hooks` have had major version number bumps, so there is a good chance that linting and auto-fix behaviours will change due to new / updated rules.
+
 # v5.0.3
 
 ## Don't apply mutation rules for getInitialProps
