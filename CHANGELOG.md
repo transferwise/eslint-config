@@ -2,7 +2,7 @@
 
 ## Update dependencies
 
-Breaking: `prettier` and `eslint-plugin-react-hooks` have had major version number bumps, so there is a good chance that linting and auto-fix behaviours will change due to new / updated rules.
+Breaking: `prettier` and `eslint-plugin-react-hooks` have had major version number bumps, so there is a good chance that linting and auto-fix behaviours will change due to new / updated rules. Read about changes in Prettier v2.0 on [their blog](https://prettier.io/blog/2020/03/21/2.0.0.html).
 
 # v5.0.3
 
