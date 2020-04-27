@@ -1,3 +1,8 @@
+# v6.0.0
+## Update dependencies
+
+Breaking: `prettier` and `eslint-plugin-react-hooks` have had major version number bumps, so there is a good chance that linting and auto-fix behaviours will change due to new / updated rules. Read about changes in Prettier v2.0 on [their blog](https://prettier.io/blog/2020/03/21/2.0.0.html).
+
 # v5.0.3
 ## Don't apply mutation rules for getInitialProps
 
@@ -36,7 +41,7 @@ Addressing https://github.com/transferwise/eslint-config/issues/3.
 Breaking: consumers should remove these 2 direct dependencies from their `package.json`
 
 # v2.1.0
-## Ignore`jsx-a11y/label-has-for` since [AirBnb rules are still accounting for both and](https://github.com/airbnb/javascript/issues/1873). Also remove `prefer-promise-reject-errors` for tests.  
+## Ignore`jsx-a11y/label-has-for` since [AirBnb rules are still accounting for both and](https://github.com/airbnb/javascript/issues/1873). Also remove `prefer-promise-reject-errors` for tests.
 
 # v2.0.0
 ## Use `jsx-a11y/label-has-associated-control` in favour of deprecated `jsx-a11y/label-has-for`
@@ -50,29 +55,29 @@ Breaking: consumers should remove these 2 direct dependencies from their `packag
 # v0.3.0
 ## Add default `prettier` config
 
-* consumers can now use the shared `prettier` config separately from ESLint as well
-* run `eslint` on the config files themselves, to stay consistent with the rules and formatting
+- consumers can now use the shared `prettier` config separately from ESLint as well
+- run `eslint` on the config files themselves, to stay consistent with the rules and formatting
 
 # v0.2.3
 ## Use `prettier/react` config to support `eslint-plugin-react`
 
-* extending `prettier/react` overrides some rules to support `eslint-plugin-react`, used in `eslint-config-airbnb`
+- extending `prettier/react` overrides some rules to support `eslint-plugin-react`, used in `eslint-config-airbnb`
 
 # v0.2.2
 ## Use plugin:prettier/recommended config to extend config and apply plugin
 
-* extending plugin:prettier/recommended config extends the prettier config and applies the plugin in a single step
+- extending plugin:prettier/recommended config extends the prettier config and applies the plugin in a single step
 
 # v0.2.1
 ## Fix Contributing heading in readme to follow link
 
-* the link and heading are both Contributing now
+- the link and heading are both Contributing now
 
 # v0.2.0
 ## Add `husky` and `lint-staged` to peer dependencies, update readme
 
-* `husky` and `lint-staged` are added to `peerDependencies` for easier usage
-* badges, easy installation with `install-peerdeps`, usage details, and contribution have been added to readme
+- `husky` and `lint-staged` are added to `peerDependencies` for easier usage
+- badges, easy installation with `install-peerdeps`, usage details, and contribution have been added to readme
 
 # v0.1.0
 ## Initial release
