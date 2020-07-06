@@ -1,3 +1,8 @@
+# v6.0.1
+## Use Yarn
+
+Yarn is used as the package manager instead of npm now.
+
 # v6.0.0
 ## Update dependencies
 
