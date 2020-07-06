@@ -10,7 +10,7 @@ jobs:
       - checkout
       - run:
           name: Install dependencies
-          command: npm ci
+          command: yarn install --frozen-lockfile
       - persist_to_workspace:
           root: .
           paths:
@@ -22,7 +22,7 @@ jobs:
           at: ~/eslint-config
       - run:
           name: Test
-          command: npm test
+          command: yarn test
   release:
     <<: *defaults
     steps:
@@ -36,7 +36,7 @@ jobs:
           command: |
             mkdir ~/.ssh
             ssh-keyscan github.com >> ~/.ssh/known_hosts
-            npm run release-to-github
+            yarn release-to-github
       - run:
           name: Publish on npm
           command: npm publish --access=public

@@ -9,7 +9,7 @@
   "scripts": {
     "format": "eslint --fix *.js",
     "lint": "eslint *.js",
-    "test": "npm run lint && npm run check-release-to-github",
+    "test": "yarn lint && yarn check-release-to-github",
     "check-release-to-github": "release-to-github-with-changelog-pre-release-checks",
     "release-to-github": "release-to-github-with-changelog"
   },
