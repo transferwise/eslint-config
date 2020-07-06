@@ -1,6 +1,6 @@
 {
   "name": "@transferwise/eslint-config",
-  "version": "6.0.0",
+  "version": "6.0.1",
   "description": "TransferWise ESLint & Prettier configuration",
   "main": ".eslintrc.js",
   "files": [
@@ -9,7 +9,7 @@
   "scripts": {
     "format": "eslint --fix *.js",
     "lint": "eslint *.js",
-    "test": "npm run lint && npm run check-release-to-github",
+    "test": "yarn lint && yarn check-release-to-github",
     "check-release-to-github": "release-to-github-with-changelog-pre-release-checks",
     "release-to-github": "release-to-github-with-changelog"
   },
