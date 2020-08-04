@@ -2,7 +2,9 @@ const prettierConfig = require('./.prettierrc');
 
 module.exports = {
   parser: 'babel-eslint',
-
+  parserOptions: {
+    emcaVersion: 2017,
+  },
   env: {
     browser: true,
     jest: true,
