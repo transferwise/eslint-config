@@ -1,3 +1,8 @@
+# v6.1.0
+## Customize react/jsx-props-no-spreading
+
+Allow prop spreading for custom React component and explicit spreading.
+
 # v6.0.1
 ## Use Yarn
 

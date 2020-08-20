@@ -10,6 +10,13 @@ module.exports = {
   plugins: ['fp'],
   extends: ['airbnb', 'plugin:prettier/recommended', 'prettier/react'],
   rules: {
+    'react/jsx-props-no-spreading': [
+      2,
+      {
+        explicitSpread: 'ignore',
+        custom: 'ignore',
+      },
+    ],
     'prettier/prettier': ['error', prettierConfig],
     'react/destructuring-assignment': [2, 'always', { ignoreClassFields: true }],
     'react/jsx-filename-extension': 0,
