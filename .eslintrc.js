@@ -21,8 +21,7 @@ module.exports = {
   plugins: ['fp'],
   // for plugin:@typescript-eslint/recommended-requiring-type-checking, explained in https://github.com/typescript-eslint/typescript-eslint/blob/master/docs/getting-started/linting/TYPED_LINTING.md
   parserOptions: {
-    tsconfigRootDir: __dirname,
-    project: ['./tsconfig.json'],
+    project: './tsconfig.json',
   },
   rules: {
     'import/order': [
