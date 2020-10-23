@@ -32,9 +32,19 @@ The config comes with _many_ peer dependencies, as [plugins cannot be dependeice
 
 There will likely be issues when upgrading:
 
-- if the configuration fails, open an issue or PR in this repository with details
+- if the configuration fails and the _Troubleshooting_ section does not help, open an issue or PR in this repository with details
 - if there are too many errors to fix for a rule you agree with, feel free to turn it off in your ESLint config and migrate gradually
 - if there are errors for a rule you do not agree with, open a PR in this repository against the `beta` branch to start a discussion around it
+
+**Troubleshooting**
+
+**Problem:** `@typescript-eslint/no-unused-vars` false positive  
+**Solution:** Add this to `package.json`:
+```json
+  "resolutions": {
+    "@typescript-eslint/parser": "^4.4.1"
+  },
+```
 
 # v6.1.0
 ## Customize react/jsx-props-no-spreading
