@@ -63,6 +63,7 @@ module.exports = {
           param: false,
           params: false,
           pkg: false,
+          fn: false,
         },
       },
     ],
