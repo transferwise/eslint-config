@@ -39,7 +39,7 @@ jobs:
             yarn release-to-github
       - run:
           name: Publish on npm
-          command: npm publish --access=public
+          command: npm publish --access=public --tag=beta
 
 workflows:
   version: 2
@@ -55,4 +55,4 @@ workflows:
             - test
           filters:
             branches:
-              only: master
+              only: beta
