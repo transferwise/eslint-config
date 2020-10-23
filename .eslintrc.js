@@ -64,6 +64,7 @@ module.exports = {
           params: false,
           pkg: false,
           fn: false,
+          i: false,
         },
       },
     ],
