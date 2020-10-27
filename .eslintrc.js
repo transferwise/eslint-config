@@ -101,4 +101,12 @@ module.exports = {
       typescript: {}, // for ESLint to know about tsconfig.json baseUrl and distinguish external and internal imports in import/order
     },
   },
+  overrides: [
+    {
+      files: ['*.test.ts', '*.test.tsx'],
+      rules: {
+        'sonarjs/no-duplicate-string': 'off', // tests are better when explicit
+      },
+    },
+  ],
 };
