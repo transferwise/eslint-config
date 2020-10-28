@@ -74,7 +74,7 @@ module.exports = {
     ],
     'unicorn/no-fn-reference-in-iterator': 'off', // mitigated by TypeScript and reduces readability, up for consideration
     'unicorn/prefer-number-properties': 'off', // no IE support, up for consideration
-    'unicorn/no-reduce': 'off', // we use it a lot and believe the lack of mutation is acceptable
+    'unicorn/no-reduce': 'off', // using fp/no-mutation means there's sometimes no other way
     'unicorn/no-useless-undefined': 'off', // sometimes useful to be explicit
     'unicorn/better-regex': 'off', // sometimes too smart, resulting in expressions like "Ac{2}ount number"
     'unicorn/no-unsafe-regex': 'error',
