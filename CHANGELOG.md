@@ -25,7 +25,7 @@ Most of the existing rules, e.g. `prettier`'s and `fp/no-mutation`, are kept. Th
 
 **Upgrading from v6 to v7**
 
-The config comes with _many_ peer dependencies, as [plugins cannot be dependeices](https://github.com/eslint/eslint/issues/3458). Therefore, it's easiest to:
+The config comes with _many_ peer dependencies, as [plugins cannot be dependencies](https://github.com/eslint/eslint/issues/3458). Therefore, it's easiest to:
 1. Remove all dependencies containing `eslint` or `prettier` from `package.json`.
 2. `yarn install` or `npm install`.
 3. `npx install-peerdeps --dev --yarn @transferwise/eslint-config@beta` or `npx install-peerdeps --dev @transferwise/eslint-config@beta`.
