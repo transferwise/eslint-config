@@ -111,6 +111,7 @@ module.exports = {
       files: ['*.test.ts', '*.test.tsx'],
       rules: {
         'sonarjs/no-duplicate-string': 'off', // tests are better when explicit
+        'unicorn/consistent-function-scoping': 'off', // to allow helper functions at the bottom
       },
     },
   ],
