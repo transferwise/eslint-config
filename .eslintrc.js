@@ -100,6 +100,7 @@ module.exports = {
         exceptions: [{ property: 'getInitialProps' }, { object: 'window' }],
       },
     ],
+    'no-alert': 'error',
   },
   settings: {
     'import/resolver': {
