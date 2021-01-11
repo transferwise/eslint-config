@@ -19,6 +19,7 @@ New plugins and rules are added based on ESLint config extensions in the transfe
 - `eslint-plugin-sonarjs` is added to detect bug-prone code
 - `import/order` rule is added to clean import order
 - importing `enzyme` will error with a recommendation to use `@testing-library/react` (disable lines to allow gradual migration)
+- importing `retranslate` will error with a recommendation to use `react-intl`
 - various compatibility extensions are added for TypeScript and Prettier
 
 Most of the existing rules, e.g. `prettier`'s and `fp/no-mutation`, are kept. The rules that are made redundant by TypeScript (prop types, spreads, etc.) are removed.

@@ -86,6 +86,10 @@ module.exports = {
         name: 'enzyme',
         message: 'Use @testing-library/react instead',
       },
+      {
+        name: 'retranslate',
+        message: 'Use react-intl instead',
+      },
     ],
     'prefer-object-spread': 'error',
     'fp/no-mutation': [
