@@ -101,6 +101,7 @@ module.exports = {
       },
     ],
     'no-alert': 'error',
+    'react/no-danger': 'error',
   },
   settings: {
     'import/resolver': {
