@@ -103,6 +103,8 @@ module.exports = {
     'no-alert': 'error',
     'react/no-danger': 'error',
     'no-console': 'error',
+    'react/prefer-stateless-function': 'error',
+    'react/no-this-in-sfc': 'error',
   },
   settings: {
     'import/resolver': {
