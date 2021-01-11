@@ -37,7 +37,13 @@ There will likely be issues when upgrading:
 - if there are too many errors to fix for a rule you agree with, feel free to turn it off in your ESLint config and migrate gradually
 - if there are errors for a rule you do not agree with, open a PR in this repository against the `beta` branch to start a discussion around it
 
+Also, take a look at your ESLint disables, you might not need some of them, e.g. `react/jsx-props-no-spreading`.
+
 **Troubleshooting**
+
+**Problem:** `Parsing error: "parserOptions.project" has been set for @typescript-eslint/parser.`  
+**Solution:** Add the file after `The file does not match your project config:` to your `tsconfig.json` `includes` array.
+
 
 **Problem:** `@typescript-eslint/no-unused-vars` false positive  
 **Solution:** Add this to `package.json`:
