@@ -1,4 +1,3 @@
-// eslint-disable-next-line @typescript-eslint/no-var-requires
 const prettierConfig = require('./.prettierrc');
 
 module.exports = {
@@ -7,9 +6,6 @@ module.exports = {
     // TODO: Consider more rules from https://eslint.org/docs/rules/
     'react-app',
     'plugin:jsx-a11y/strict',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:@typescript-eslint/recommended-requiring-type-checking',
-    'plugin:import/typescript',
     'plugin:jest/all',
     'plugin:jest-dom/recommended',
     'plugin:testing-library/react',
@@ -18,7 +14,6 @@ module.exports = {
     'plugin:prettier/recommended',
     // recommended exclusions, explained in https://github.com/prettier/eslint-config-prettier/blob/master/README.md#installation
     'prettier/react',
-    'prettier/@typescript-eslint',
     'prettier/unicorn',
   ],
   plugins: ['fp'],
@@ -104,7 +99,6 @@ module.exports = {
     'no-console': 'error',
 
     // https://github.com/yannickcr/eslint-plugin-react/#list-of-supported-rules
-    'react/boolean-prop-naming': ['error', { rule: '^(is|has)[A-Z]([A-Za-z0-9]?)+' }],
     'react/button-has-type': 'error',
     'react/destructuring-assignment': 'error',
     'react/forbid-dom-props': [
@@ -143,11 +137,11 @@ module.exports = {
     'react/jsx-boolean-value': 'error',
     'react/jsx-child-element-spacing': 'error',
     'react/jsx-curly-brace-presence': 'error',
-    'react/jsx-filename-extension': ['error', { extensions: ['.tsx'] }],
+    'react/jsx-filename-extension': ['error', { extensions: ['.tsx', '.jsx'] }],
     'react/jsx-fragments': 'error',
     'react/jsx-handler-names': 'error',
     'react/jsx-key': ['error', { checkFragmentShorthand: true }],
-    'react/jsx-max-depth': ['error', { max: 3 }],
+    'react/jsx-max-depth': ['error', { max: 5 }],
     'react/jsx-no-comment-textnodes': 'error',
     'react/jsx-no-constructed-context-values': 'error',
     'react/jsx-no-script-url': 'error',
@@ -163,10 +157,22 @@ module.exports = {
   },
   overrides: [
     {
-      files: ['*.test.ts', '*.test.tsx'],
+      files: ['*.test.ts', '*.test.tsx', '*.test.js', '*.test.jsx'],
       rules: {
         'sonarjs/no-duplicate-string': 'off', // tests are better when explicit
         'unicorn/consistent-function-scoping': 'off', // to allow helper functions at the bottom
+      },
+    },
+    {
+      files: ['**/*.tsx', '**/*.ts'],
+      extends: [
+        'plugin:@typescript-eslint/recommended',
+        'plugin:@typescript-eslint/recommended-requiring-type-checking',
+        'plugin:import/typescript',
+        'prettier/@typescript-eslint',
+      ],
+      rules: {
+        '@typescript-eslint/unbound-method': 'off', // false positive with useIntl functions: https://github.com/typescript-eslint/typescript-eslint/issues/2245#issuecomment-648712540
       },
     },
   ],
