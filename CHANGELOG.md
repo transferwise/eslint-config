@@ -1,3 +1,6 @@
+# v6.1.1
+
+Add version range for eslint-plugin-react-hooks peer dependency
 # v6.1.0
 ## Customize react/jsx-props-no-spreading
 
