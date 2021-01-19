@@ -131,6 +131,10 @@ module.exports = {
       'error',
       {
         callbacksLast: true,
+        shorthandFirst: false,
+        shorthandLast: false,
+        ignoreCase: false,
+        noSortAlphabetically: true,
         reservedFirst: true,
       },
     ],
