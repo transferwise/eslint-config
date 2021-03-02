@@ -85,6 +85,12 @@ module.exports = {
         name: 'retranslate',
         message: 'Use react-intl instead',
       },
+      {
+        name: 'react',
+        importNames: ['FC', 'FunctionComponent'],
+        message:
+          'Type props and return ReactNode instead: https://github.com/facebook/create-react-app/pull/8177',
+      },
     ],
     'prefer-object-spread': 'error',
     'fp/no-mutation': [
