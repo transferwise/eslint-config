@@ -53,6 +53,11 @@ Also, take a look at your ESLint disables, you might not need some of them, e.g.
   },
 ```
 
+**Problem:** `Parsing error: "parserOptions.project" has been set for @typescript-eslint/parser.
+The file does not match your project config: foo.ts.
+The file must be included in at least one of the projects provided.`  
+**Solution**: Restart the editor, we're looking into more sustainable fixes (see [issue](https://github.com/typescript-eslint/typescript-eslint/issues/864)).
+
 # v6.1.0
 ## Customize react/jsx-props-no-spreading
 
