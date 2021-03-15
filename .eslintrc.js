@@ -150,7 +150,7 @@ module.exports = {
     'react/jsx-curly-brace-presence': 'error',
     'react/jsx-filename-extension': ['error', { extensions: ['.tsx', '.jsx'] }],
     'react/jsx-fragments': 'error',
-    'react/jsx-handler-names': ['error', { checkLocalVariables: true, checkInlineFunction: true }],
+    // 'react/jsx-handler-names': ['error', { checkLocalVariables: true }], // does not seem to work correctly with destructuring
     'react/jsx-key': ['error', { checkFragmentShorthand: true }],
     'react/jsx-max-depth': ['error', { max: 5 }],
     'react/jsx-no-comment-textnodes': 'error',
