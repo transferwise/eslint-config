@@ -85,12 +85,13 @@ module.exports = {
         name: 'retranslate',
         message: 'Use react-intl instead',
       },
-      {
-        name: 'react',
-        importNames: ['FC', 'FunctionComponent'],
-        message:
-          'Type props and return ReactNode instead: https://github.com/facebook/create-react-app/pull/8177',
-      },
+      // Not added in this version to reduce major changes and to look into it further
+      // {
+      //   name: 'react',
+      //   importNames: ['FC', 'FunctionComponent'],
+      //   message:
+      //     'Type props and return ReactNode instead: https://github.com/facebook/create-react-app/pull/8177',
+      // },
     ],
     'prefer-object-spread': 'error',
     'fp/no-mutation': [
@@ -132,31 +133,31 @@ module.exports = {
     'react/self-closing-comp': 'error',
     'react/style-prop-object': 'error',
     'react/void-dom-elements-no-children': 'error',
-
-    'react/jsx-sort-props': [
-      'error',
-      {
-        callbacksLast: true,
-        shorthandFirst: false,
-        shorthandLast: false,
-        ignoreCase: false,
-        noSortAlphabetically: true,
-        reservedFirst: true,
-      },
-    ],
+    // Not added in this version to reduce major changes, consider adding to own config
+    // 'react/jsx-sort-props': [
+    //   'error',
+    //   {
+    //     callbacksLast: true,
+    //     shorthandFirst: false,
+    //     shorthandLast: false,
+    //     ignoreCase: false,
+    //     noSortAlphabetically: true,
+    //     reservedFirst: true,
+    //   },
+    // ],
     'react/jsx-boolean-value': 'error',
     'react/jsx-child-element-spacing': 'error',
     'react/jsx-curly-brace-presence': 'error',
     'react/jsx-filename-extension': ['error', { extensions: ['.tsx', '.jsx'] }],
     'react/jsx-fragments': 'error',
-    'react/jsx-handler-names': 'error',
+    'react/jsx-handler-names': ['error', { checkLocalVariables: true, checkInlineFunction: true }],
     'react/jsx-key': ['error', { checkFragmentShorthand: true }],
     'react/jsx-max-depth': ['error', { max: 5 }],
     'react/jsx-no-comment-textnodes': 'error',
     'react/jsx-no-constructed-context-values': 'error',
     'react/jsx-no-script-url': 'error',
     'react/jsx-no-target-blank': 'error',
-    'react/jsx-no-useless-fragment': 'error',
+    // 'react/jsx-no-useless-fragment': 'error', // Not added, as the commonly used FC requires a wrapper (when returning a string, for example)
     'react/jsx-pascal-case': 'error',
     'react/jsx-uses-react': 'error',
   },
