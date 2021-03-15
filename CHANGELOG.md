@@ -1,9 +1,9 @@
 # v7.0.0-beta.1
 ## Use TypeScript, add plugins and rules, update ESLint and other dependencies
 
-v7 of this config relies on TypeScript, as it is recommended for new projects in TransferWise and easy to add to existing ones. Maintaining a non-TypeScript config in addition would come with additional maintenance cost. If you don't want to migrate to TypeScript, feel free to keep using v6.
+v7 of this config relies on TypeScript, as it is recommended for new projects in Wise and easy to add to existing ones. Maintaining a non-TypeScript config in addition would come with maintenance cost. If you don't want to add TypeScript support to your project, feel free to keep using v6.
 
-New plugins and rules are added based on ESLint config extensions in the transferwise GitHub organisation and industry recommendations for the technologies used in TransferWise. **The beta versions are intended to be strict, so consumers could start using them gradually and challenge the rules, which we'd reevaluate before releasing the stable v7.**
+New plugins and rules are added based on ESLint config extensions in the company's GitHub organisation and industry recommendations for the technologies used in Wise. **The beta versions are intended to be strict, so consumers could start using them gradually and challenge the rules, which we'd reevaluate before releasing the stable v7.**
 
 **Changes**
 
@@ -37,7 +37,7 @@ There will likely be issues when upgrading:
 - if there are too many errors to fix for a rule you agree with, feel free to turn it off in your ESLint config and migrate gradually
 - if there are errors for a rule you do not agree with, open a PR in this repository against the `beta` branch to start a discussion around it
 
-Also, take a look at your ESLint disables, you might not need some of them, e.g. `react/jsx-props-no-spreading`.
+Also, take a look at your ESLint disables and try removing them — you might not need some of them, e.g. `react/jsx-props-no-spreading`.
 
 **Troubleshooting**
 
@@ -52,6 +52,7 @@ Also, take a look at your ESLint disables, you might not need some of them, e.g.
     "@typescript-eslint/parser": "^4.4.1"
   },
 ```
+
 
 **Problem:** `Parsing error: "parserOptions.project" has been set for @typescript-eslint/parser.
 The file does not match your project config: foo.ts.
