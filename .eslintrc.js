@@ -7,7 +7,7 @@ module.exports = {
     browser: true,
     jest: true,
   },
-  plugins: ['fp'],
+  plugins: ['fp', '@transferwise'],
   extends: ['airbnb', 'plugin:prettier/recommended', 'prettier/react'],
   rules: {
     'react/jsx-props-no-spreading': [
@@ -45,5 +45,6 @@ module.exports = {
     ],
     'fp/no-mutating-assign': 'error',
     curly: [1, 'all'],
+    '@transferwise/form-has-method-attribute': 'error',
   },
 };
