@@ -11,4 +11,4 @@
 
 ## ✅ Checklist
 
-- [ ] The package version is bumped according to [semver](https://semver.org) in `package.json`, `package-lock.json`, and `CHANGELOG.md`
+- [ ] The package version is bumped according to [semver](https://semver.org) in `package.json`, and `CHANGELOG.md`
