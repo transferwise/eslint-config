@@ -1,6 +1,6 @@
 {
   "name": "@transferwise/eslint-config",
-  "version": "6.1.0",
+  "version": "6.2.0",
   "description": "TransferWise ESLint & Prettier configuration",
   "main": ".eslintrc.js",
   "files": [
@@ -34,6 +34,7 @@
     "eslint-config-prettier": "^6.10.1"
   },
   "peerDependencies": {
+    "@transferwise/eslint-plugin": "^0.1.1",
     "eslint": "^6.8.0",
     "eslint-plugin-fp": "^2.3.0",
     "eslint-plugin-import": "^2.20.2",
@@ -44,6 +45,7 @@
     "prettier": "^2.0.4"
   },
   "devDependencies": {
+    "@transferwise/eslint-plugin": "^0.1.1",
     "eslint": "^6.8.0",
     "eslint-plugin-fp": "^2.3.0",
     "eslint-plugin-import": "^2.20.2",

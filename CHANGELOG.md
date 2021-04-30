@@ -1,3 +1,6 @@
+# v6.2.0
+## Add @transferwise/eslint-plugin and ensure forms have a method attribute
+
 # v6.1.0
 ## Customize react/jsx-props-no-spreading
 
