@@ -8,7 +8,7 @@ module.exports = {
     jest: true,
   },
   plugins: ['fp', '@transferwise'],
-  extends: ['airbnb', 'plugin:prettier/recommended', 'prettier/react'],
+  extends: ['airbnb', 'plugin:prettier/recommended', 'prettier/react', 'next'],
   rules: {
     'react/jsx-props-no-spreading': [
       2,

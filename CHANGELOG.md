@@ -1,3 +1,6 @@
+# v6.3.0
+## Extend eslint-config-next to include Next.js recommended rules
+
 # v6.2.0
 ## Add @transferwise/eslint-plugin and ensure forms have a method attribute
 
