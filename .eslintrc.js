@@ -12,6 +12,7 @@ module.exports = {
     'plugin:unicorn/recommended',
     'plugin:sonarjs/recommended',
     'plugin:prettier/recommended',
+    'plugin:@next/next/recommended',
     // recommended exclusions, explained in https://github.com/prettier/eslint-config-prettier/blob/master/README.md#installation
     'prettier/react',
     'prettier/unicorn',
