@@ -16,7 +16,7 @@ module.exports = {
     'prettier/react',
     'prettier/unicorn',
   ],
-  plugins: ['fp'],
+  plugins: ['fp', '@transferwise'],
   // for plugin:@typescript-eslint/recommended-requiring-type-checking, explained in https://github.com/typescript-eslint/typescript-eslint/blob/master/docs/getting-started/linting/TYPED_LINTING.md
   parserOptions: {
     project: './tsconfig.json',
@@ -160,6 +160,7 @@ module.exports = {
     // 'react/jsx-no-useless-fragment': 'error', // Not added, as the commonly used FC requires a wrapper (when returning a string, for example)
     'react/jsx-pascal-case': 'error',
     'react/jsx-uses-react': 'error',
+    '@transferwise/form-has-method-attribute': 'error',
   },
   settings: {
     'import/resolver': {

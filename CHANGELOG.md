@@ -59,6 +59,9 @@ The file does not match your project config: foo.ts.
 The file must be included in at least one of the projects provided.`  
 **Solution**: Restart the editor, we're looking into more sustainable fixes (see [issue](https://github.com/typescript-eslint/typescript-eslint/issues/864)).
 
+# v6.2.0
+## Add @transferwise/eslint-plugin and ensure forms have a method attribute
+
 # v6.1.0
 ## Customize react/jsx-props-no-spreading
 

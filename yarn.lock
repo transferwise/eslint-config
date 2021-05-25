@@ -561,6 +561,11 @@
   dependencies:
     "@sinonjs/commons" "^1.7.0"
 
+"@transferwise/eslint-plugin@^0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@transferwise/eslint-plugin/-/eslint-plugin-0.1.1.tgz#a7fc6a7002dd954bcbcc0df3bc1735b81f652d2d"
+  integrity sha512-o5DWSLh239eqX4AMJwxE0yJgMGWx2creWRw+YS5Id3R4uWQjwrsz2ZQEpog+BoqtAaaI7YyHRWqpTkfFpRG4Rg==
+
 "@types/babel__core@^7.0.0", "@types/babel__core@^7.1.7":
   version "7.1.10"
   resolved "https://registry.yarnpkg.com/@types/babel__core/-/babel__core-7.1.10.tgz#ca58fc195dd9734e77e57c6f2df565623636ab40"
