@@ -58,7 +58,7 @@ Also, take a look at your ESLint disables and try removing them — you might no
 **Problem:** `Parsing error: "parserOptions.project" has been set for @typescript-eslint/parser.
 The file does not match your project config: foo.ts.
 The file must be included in at least one of the projects provided.`  
-**Solution**: Restart the editor, we're looking into more sustainable fixes (see [issue](https://github.com/typescript-eslint/typescript-eslint/issues/864)).
+**Solution**: Make sure your `include` glob patterns in `tsconfig.json` are [properly formatted](https://www.typescriptlang.org/tsconfig/#include), e.g `src/**/*` instead of `src`
 
 # v6.2.0
 ## Add @transferwise/eslint-plugin and ensure forms have a method attribute
