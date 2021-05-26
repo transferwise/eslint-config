@@ -17,6 +17,7 @@ New plugins and rules are added based on ESLint config extensions in the company
 - `eslint-plugin-testing-library` is added to enforce best React Testing Library practices
 - `eslint-plugin-unicorn` is added to enforce general best practices
 - `eslint-plugin-sonarjs` is added to detect bug-prone code
+- `@next/eslint-plugin-next` is added to introduce Next.js specific rules
 - `import/order` rule is added to clean import order
 - importing `enzyme` will error with a recommendation to use `@testing-library/react` (disable lines to allow gradual migration)
 - importing `retranslate` will error with a recommendation to use `react-intl`
