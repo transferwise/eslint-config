@@ -162,6 +162,7 @@ module.exports = {
     'react/jsx-pascal-case': 'error',
     'react/jsx-uses-react': 'error',
     '@transferwise/form-has-method-attribute': 'error',
+    '@next/next/no-img-element': 'off', // We don't generally use Image from Next.js (yet)
   },
   settings: {
     'import/resolver': {
