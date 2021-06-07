@@ -171,7 +171,7 @@ module.exports = {
   },
   overrides: [
     {
-      files: ['*.test.ts', '*.test.tsx', '*.test.js', '*.test.jsx'],
+      files: ['*.test.ts?(x)', '*.test.js?(x)', '*.spec.ts?(x)', '*.spec.js?(x)'],
       rules: {
         'sonarjs/no-duplicate-string': 'off', // tests are better when explicit
         'unicorn/consistent-function-scoping': 'off', // to allow helper functions at the bottom
