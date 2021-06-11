@@ -34,6 +34,7 @@ module.exports = {
     ],
     'jest/valid-title': ['error', { ignoreTypeOfDescribeName: true }], // to support using a function as a title, which prevents titles from getting out of date
     'jest/prefer-expect-assertions': 'off', // too verbose for every test
+    'jest/require-top-level-describe': 'off', // using `test` or hooks outside of a describe block is fine in smaller test files
     'jest/no-hooks': 'off', // we're using them for setup, up for consideration
     'jest/lowercase-name': [
       'error',
