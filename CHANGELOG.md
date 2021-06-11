@@ -1,3 +1,6 @@
+# v7.0.0-beta.2
+## Disable rule `jest/require-top-level-describe`
+
 # v7.0.0-beta.1
 ## Use TypeScript, add plugins and rules, update ESLint and other dependencies
 
