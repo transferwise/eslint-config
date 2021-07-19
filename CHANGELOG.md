@@ -3,7 +3,7 @@
 
 v7 of this config relies on TypeScript, as it is recommended for new projects in Wise and easy to add to existing ones. Maintaining a non-TypeScript config in addition would come with maintenance cost. If you don't want to add TypeScript support to your project, feel free to keep using v6.
 
-New plugins and rules are added based on ESLint config extensions in the company's GitHub organisation and industry recommendations for the technologies used in Wise. **The beta versions are intended to be strict, so consumers could start using them gradually and challenge the rules, which we'd reevaluate before releasing the stable v7.**
+New plugins and rules are added based on ESLint config extensions in the company's GitHub organisation and industry recommendations for the technologies used in Wise.
 
 **Changes**
 
@@ -30,13 +30,12 @@ Most of the existing rules, e.g. `prettier`'s and `fp/no-mutation`, are kept. Th
 The config comes with _many_ peer dependencies, as [plugins cannot be dependencies](https://github.com/eslint/eslint/issues/3458). Therefore, it's easiest to:
 1. Remove all dependencies containing `eslint` or `prettier` from `package.json`.
 2. `yarn install` or `npm install`.
-3. `npx install-peerdeps --dev --yarn @transferwise/eslint-config@beta` or `npx install-peerdeps --dev @transferwise/eslint-config@beta`.
+3. `npx install-peerdeps --dev --yarn @transferwise/eslint-config` or `npx install-peerdeps --dev @transferwise/eslint-config`.
 
 There will likely be issues when upgrading:
 
 - if the configuration fails and the _Troubleshooting_ section does not help, open an issue or PR in this repository with details
 - if there are too many errors to fix for a rule you agree with, feel free to turn it off in your ESLint config and migrate gradually
-- if there are errors for a rule you do not agree with, open a PR in this repository against the `beta` branch to start a discussion around it
 
 Also, take a look at your ESLint disables and try removing them — you might not need some of them, e.g. `react/jsx-props-no-spreading`.
 

@@ -11,7 +11,7 @@
     "lint": "eslint *.js",
     "test": "yarn lint && yarn check-release-to-github",
     "check-release-to-github": "release-to-github-with-changelog-pre-release-checks",
-    "release-to-github": "release-to-github-with-changelog --branch=beta"
+    "release-to-github": "release-to-github-with-changelog"
   },
   "repository": {
     "type": "git",

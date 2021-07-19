@@ -2,8 +2,8 @@
 
 [![npm](https://img.shields.io/npm/v/@transferwise/eslint-config.svg)](https://www.npmjs.com/package/@transferwise/eslint-config)
 [![GitHub release](https://img.shields.io/github/release/transferwise/eslint-config.svg)](https://github.com/transferwise/eslint-config/releases)
-[![CircleCI](https://img.shields.io/circleci/project/github/transferwise/eslint-config/beta.svg)](https://circleci.com/gh/transferwise/eslint-config)
-[![npm](https://img.shields.io/npm/l/@transferwise/eslint-config.svg)](https://github.com/transferwise/eslint-config/blob/beta/LICENSE)
+[![CircleCI](https://img.shields.io/circleci/project/github/transferwise/eslint-config/master.svg)](https://circleci.com/gh/transferwise/eslint-config)
+[![npm](https://img.shields.io/npm/l/@transferwise/eslint-config.svg)](https://github.com/transferwise/eslint-config/blob/master/LICENSE)
 
 This is an extensible ESLint config used at [TransferWise](https://transferwise.com) :money_with_wings:
 
