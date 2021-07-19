@@ -1,4 +1,4 @@
-# v7.0.0-beta.1
+# v7.0.0
 ## Use TypeScript, add plugins and rules, update ESLint and other dependencies
 
 v7 of this config relies on TypeScript, as it is recommended for new projects in Wise and easy to add to existing ones. Maintaining a non-TypeScript config in addition would come with maintenance cost. If you don't want to add TypeScript support to your project, feel free to keep using v6.
