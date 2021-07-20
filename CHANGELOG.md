@@ -1,3 +1,6 @@
+# v7.1.0
+## Bump @transferwise/eslint-plugin to ensure getServerSideProps is exported from the pages directory
+
 # v7.0.0
 ## Use TypeScript, add plugins and rules, update ESLint and other dependencies
 
