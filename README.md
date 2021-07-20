@@ -14,7 +14,7 @@ It uses [Airbnb's](https://www.npmjs.com/package/eslint-config-airbnb) as a base
 ### 1. Install with peer dependencies
 
 ```bash
-npx install-peerdeps --dev @transferwise/eslint-config
+npx install-peerdeps --yarn --dev @transferwise/eslint-config
 ```
 (if it doesn't work, [update npm](https://docs.npmjs.com/try-the-latest-stable-version-of-npm))
 
@@ -32,13 +32,12 @@ Your own config can extend and override it however you want. If you find yoursel
 
 For the best developer experience, all of the following are recommended.
 
-#### Linting and formatting in `package.json` scripts
+#### Linting and fixing lint errors in `package.json` scripts
 
 Example:
 ```json
-  "test": "npm run lint && ...other test commands...",
-  "lint": "eslint '**/*.{js,jsx}'", // runs on all js and jsx files, add {ts,tsx} for TypeScript
-  "format": "npm run lint -- --fix"
+  "lint": "eslint '**/*.{ts,tsx,js,jsx}' --ignore-path .gitignore",
+  "lint:fix": "yarn lint --fix"
 ```
 
 #### Auto-formatting in IDE
@@ -54,8 +53,8 @@ Example:
   "eslint.validate": [
     "javascript",
     "javascriptreact",
-    // "typescript",
-    // "typescriptreact",
+    "typescript",
+    "typescriptreact",
   ],
   "eslint.autoFixOnSave": true,
 ```
@@ -63,14 +62,13 @@ Example:
 #### Auto-formatting on commit
 
 1. Install required packages:  
-`npm install --save-dev lint-staged husky`
+`yarn add --dev lint-staged husky`
 1. Add the following config:
 `package.json`
 ```json
   "lint-staged": {
-    "*.{js,jsx}": [ // add {ts,tsx} for TypeScript
-      "eslint --fix",
-      "git add"
+    "*.{ts,tsx,js,jsx}": [
+      "yarn lint"
     ]
   },
   "husky": {
